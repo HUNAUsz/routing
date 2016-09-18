@@ -13,4 +13,4 @@
 	git config --global user.email "email address"
 	git config --global user.name "your name"
 6、将git commit编译器从git nano换成vim
-	git config --global core.edit vim
+	git config --global core.editor vim
