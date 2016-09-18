@@ -1,0 +1,16 @@
+1、在Ubuntu上安装git
+	sudo apt-get install git 
+2、在Ubuntu上安装SSH
+	sudo apt-get install ssh
+3、生成SSH key
+	ssh-keygen -t rsa
+	得到公钥文件
+	/home/your user name/.ssh/id_rsa.pub
+4、查看公钥并添加到git服务器
+	cat /home/your user name/.ssh/id_rsa.pub
+	复制全部到SSH服务器SSH key位置
+5、配置邮箱和用户名
+	git config --global user.email "email address"
+	git config --global user.name "your name"
+6、将git commit编译器从git nano换成vim
+	git config --global core.edit vim
